@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup page three</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link href="./Assets/css/custom-css/signupPageOne.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="header-container">
+        <img src="./Assets/images/smallsmallLogo.svg" alt="Logo" class="header-img">
+        <button class="navbar-toggler" type="button" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </button>
+        
+        <div class="already-account">
+            <p>Already have an account? <a href="./login.html" class="login-link">Signin</a></p>
+        </div>
+        
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="container  text-center form-container">
+        <img src="./Assets/images/checkEmail.svg" alt="Logo" style="width: 12%;" class="mb-5">
+       <p>We’ve sent a verification email to</p>
+        <h4>james.gunn@gmail.com</h4>
+        <small>Click the button in your email to activate your account.</small>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <script>
+        function togglePassword() {
+            var passwordInput = document.getElementById('password');
+            var togglePasswordIcon = document.getElementById('togglePasswordIcon');
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                togglePasswordIcon.classList.remove('fa-eye');
+                togglePasswordIcon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                togglePasswordIcon.classList.remove('fa-eye-slash');
+                togglePasswordIcon.classList.add('fa-eye');
+            }
+        }
+
+        function toggleMenu() {
+            var mobileMenu = document.getElementById('mobileMenu');
+            if (mobileMenu.style.display === 'block') {
+                mobileMenu.style.display = 'none';
+            } else {
+                mobileMenu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
