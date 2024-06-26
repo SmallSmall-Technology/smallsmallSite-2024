@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 body {
     background-color: #F4F5F6;
     font-family: "Poppins", sans-serif;
 }
 
-input{
+input {
     border: 2px solid #CAD6D8;
 }
 
@@ -33,7 +32,13 @@ input{
     margin: 0;
 }
 
-
+.already-have-an-account {
+    color: #222224;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
 
 .already-account {
     margin-top: 20px;
@@ -44,7 +49,6 @@ input{
     color: #138E3D;
     text-decoration: none;
 }
-
 
 .login-link {
     color: #138E3D;
@@ -82,13 +86,22 @@ input{
 }
 
 .form-container {
-    margin-top: 5%;
-    width: 55%;
+    margin-top: 9%;
+    width: 50%;
     border-radius: 15px;
     padding: 50px;
     background-color: #fff;
     margin-left: auto;
     margin-right: auto;
+    border: 1px solid #CAD6D8;
+}
+
+::placeholder {
+    color: #BABABA;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
 }
 
 .password-icon {
@@ -101,24 +114,25 @@ input{
 
 .form-control-lg {
     font-size: 1.25rem;
-    /* padding: 1rem; */
     border-radius: 0.3rem;
     width: 100%;
 }
 
 .signup-button {
     width: 100%;
-    padding: 1.5%;
+    padding: 2.5%;
     background-color: #63AD7E;
     border: none;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.25rem;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
     margin-top: 30px;
     margin-left: auto;
-
 }
 
 .terms-privacy {
@@ -130,7 +144,6 @@ input{
 .terms-privacy a {
     color: #138E3D;
     text-decoration: none;
-    
 }
 
 /* Media Queries */
@@ -149,17 +162,19 @@ input{
     .form-container {
         width: 90%;
         padding: 30px;
+        padding-bottom: 54px;
     }
 }
 
 @media (max-width: 576px) {
     .form-container {
-        width: 100%;
+        width: 95%;
         padding: 20px;
+        padding-bottom: 54px;
     }
 
     .header-img {
-        width: 80px;
+        width: 120px;
     }
 
     .navbar-toggler {
@@ -171,27 +186,17 @@ input{
     }
 
     .signup-button {
-    width: 100%;
-    /* margin-left: 0; */
-    padding: 4%;
+        width: 100%;
+        padding: 4%;
+    }
 
+    .form-control-lg {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: start;
+    }
 }
-
-.form-control-lg {
-    font-size: 1rem;
-    padding: 0.5rem;
-   
-}
-
-.header-container {
-    display: flex;
-    justify-content: start;
-
-    /* align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    background-color: #fff;  */
-    
-}
-
-} 

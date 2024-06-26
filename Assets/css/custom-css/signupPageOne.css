@@ -7,7 +7,11 @@ body {
 }
 
 input{
-    border: 2px solid #CAD6D8;
+    border-radius: 4px;
+border: 1px solid #D1CECE;
+
+background: #FFF;
+padding: 4%;
 }
 
 .header-container {
@@ -27,14 +31,23 @@ input{
 .already-account {
     display: flex;
     align-items: center;
-}
-
-.already-account p {
+    font-size: 14px;
+    font-weight: 500;
     margin: 0;
 }
 
+
+
+
+.create-account{ 
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
 .next-btn-link{
 color: #fff;
+margin-left:20px;
 }
 
 .already-account {
@@ -85,12 +98,16 @@ color: #fff;
 
 .form-container {
     margin-top: 5%;
-    width: 55%;
-    border-radius: 15px;
+    width: 50%;
     padding: 50px;
     background-color: #fff;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+
+    border-radius: 5px;
+    border: 1px solid #CAD6D8;
 }
 
 .password-icon {
@@ -109,7 +126,7 @@ color: #fff;
 }
 
 .signup-button {
-    width: 30%;
+    width: 25%;
     padding: 2%;
     background-color: #63AD7E;
     border: none;
@@ -117,11 +134,17 @@ color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.25rem;
-    margin-top: 10px;
+    margin-top: 9%;
     margin-left: auto;
+    border-radius: 4px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+
+    /* margin-right: 20px; */
 
 }
+
 
 .terms-privacy {
     margin-top: 42px;
@@ -135,15 +158,41 @@ color: #fff;
     
 }
 
+
+.by-signingup-paragraph{
+    font-size: 12px;
+    margin-bottom: 15%;
+    color: #222224;
+
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
 /* Media Queries */
 @media (max-width: 992px) {
     .form-container {
         width: 70%;
         padding: 40px;
     }
+    .create-account{ 
+        font-size: 14px;
+        font-weight: 600;
+    }
 
     .already-account {
         display: none;
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        background-color: #fff;
+        justify-content:start;
     }
 }
 
@@ -151,17 +200,41 @@ color: #fff;
     .form-container {
         width: 90%;
         padding: 30px;
+        margin-top: 4%;
+    }
+    .create-account{ 
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        background-color: #fff;
+        justify-content:start;
     }
 }
 
 @media (max-width: 576px) {
-    .form-container {
+    /* .form-container {
         width: 100%;
         padding: 20px;
+    } */
+
+    .create-account{ 
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .form-container {
+        margin-top: 4%;
     }
 
     .header-img {
-        width: 80px;
+        width: 157px;
     }
 
     .navbar-toggler {
@@ -187,5 +260,16 @@ color: #fff;
 
    
 }
+
+::placeholder{
+color: #BABABA;
+
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+}
+
+
 
  
