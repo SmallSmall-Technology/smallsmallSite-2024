@@ -11,48 +11,59 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light ">
-        <a class="navbar-brand" href="#">
-            <img src="./Assets/images/smallsmallLogo.svg" alt="Logo" class="d-inline-block align-top ssheader-img">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <div class="">
+    <header class="pr-4">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="./Assets/images/smallsmallLogo.svg" alt="Logo" class="header-img "></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownB" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownB">
+                            <a class="dropdown-item" href="#">Option 1</a>
+                            <a class="dropdown-item" href="#">Option 2</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownC" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Company
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownC">
+                            <a class="dropdown-item" href="#">Option 1</a>
+                            <a class="dropdown-item" href="#">Option 2</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownD" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Media
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownD">
+                            <a class="dropdown-item" href="#">Option 1</a>
+                            <a class="dropdown-item" href="#">Option 2</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Invest</a>
+                        <button class="btn btn-primary  btn-lg btn-custom log-in-button" type="button">Log in</button>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">BuySmallsmall</a>
+                        <button class="btn btn-secondary btn-custom" type="button">Get started</button>
                     </li>
-                </div>
-
-                <div class="">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nightly stay</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">StaySmallsmall</a>
-                    </li>
-                </div>
-
-            </ul>
-
-        </div>
-
-
-        <div class="menu-icons">
-            <div class="">
-
-                <img src="./Assets/images/userContact.svg" alt="Logo"
-                    class="d-inline-block align-top border-right contact-image">
-
+                </ul>
             </div>
-            <div class=" ml-2">
-                menu
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <div class="container mt-3">
 
@@ -180,9 +191,72 @@
 
     </div>
 
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="footer-social-icons">
+                <a href="#" class=""><img src="./Assets/images/Facebook.svg" width="" height="" alt="Facebook Logo"></a>
+                <a href="#" class=""><img src="./Assets/images/twitterX.svg" width="" height="" alt="twitterX Logo"></a>
+                <a href="#" class=""><img src="./Assets/images/instagram.svg" width="" height="" alt="instagram Logo"></a></a>
+                <a href="#" class=""><img src="./Assets/images/Youtube.svg" width="" height="" alt="Youtube Logo"></a></a>
+            </div>
+            <hr>
+            <div class="footer-content row">
+                <div class="col-md-3 footer-column">
+                    <h5>Products</h5>
+                    <ul>
+                        <li><a href="#">RentSmallsmall</a></li>
+                        <li><a href="#">BuySmallsmall</a></li>
+                        <li><a href="#">Househmo</a></li>
+                        <li><a href="#">Fair by Smallsmall</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li><a href="#">Podcast</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="#">Call us at  080 90 30 456 70</a></li>
+                        <li><a href="#">hello@smallsmall.com</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <a class="navbar-brand" href="#">
+                <img src="./Assets/images/smallsmallLogo.svg" width="100%" height="auto" alt="Logo">
+            </a>
+            <div class=" copyright">
+                <p>&copy; Copyright 2024 Smallsmall Technology Ltd <a href="#">Terms&Conditions</a> | <a href="#">Privacy Policy</a></p>
+            </div>
+
+           
+        </div>
+        
+
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.querySelector('.navbar-toggler').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.getElementById('navbarNav').classList.toggle('show');
+        });
+    </script>
 </body>
 
 </html>

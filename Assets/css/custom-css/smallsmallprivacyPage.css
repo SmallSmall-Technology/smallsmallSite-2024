@@ -1,6 +1,6 @@
 
 .navbar-nav {
-    flex: 1;
+    flex: .3;
     /* justify-content: center; */
 }
 
@@ -19,7 +19,7 @@
 
 
 .navbar-brand {
-    flex: 1;
+    flex: .7;
 }
 
 .navbar-collapse {
@@ -35,7 +35,14 @@
     .ssheader-img {
         width: 60%;
     }
+
+    .footer {
+  
+        padding-left: 0;
+        padding-left: 0;
+    }
 }
+
 
 
 .accordion-item {
@@ -59,6 +66,8 @@
     float: right;
     transition: transform 0.3s ease-in-out;
 }
+
+
 
 body {
     font-family: Arial, sans-serif;
@@ -94,3 +103,114 @@ p {
     margin-bottom: 15px;
     line-height: 1.6;
 }
+
+
+.log-in-button{
+    border-radius: 5px;
+    border: 1.5px solid #63AD7E;
+    background-color: #fff;
+    color: #222224;
+
+    font-family: Hellix;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 100%;
+}
+
+
+.footer {
+  
+    padding-left: 6%;
+    padding-left: 7%;
+}
+
+
+
+.footer a {
+    color: #63AD7E;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #63AD7E;
+}
+
+
+
+.copyright{
+/* margin-top:10%; */
+border-top:1.5px solid #ABBBCC ;
+}
+
+
+.footer-social-icons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.footer-social-icons a {
+    color: #000;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.footer-column{
+justify-self: start;
+align-items: start;
+
+
+}
+
+.footer-social-icons a:hover {
+    color: #63AD7E;
+}
+.footer-content {
+    padding-top: 10px;
+}
+.footer-content h5 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-content ul li {
+    margin-bottom: 10px;
+}
+.footer-content ul li a {
+    color: #000;
+    text-decoration: none;
+}
+.footer-content ul li a:hover {
+    color: #63AD7E;
+}
+@media (max-width: 768px) {
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer-content .footer-column {
+        flex: 0 0 48%;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+  
+        padding-left: 0;
+        padding-left: 0;
+    }
+}
+
+
+
+/* @media (max-width: 576px) {
+    .header-img {
+        width: 80px;
+    }
+
+} */

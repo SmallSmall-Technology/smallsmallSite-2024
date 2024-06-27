@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header and Footer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link href="./Assets/css/custom-css/smallsmallHeaderAndFooter.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="./Assets/images/smallsmallLogo.svg" width="100%" height="auto" alt="Logo">
+        </a>
+        <div class="hamburger" id="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="collapse navbar-collapse navbar-collapse-styling " id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Product
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="productDropdown">
+                        <a class="dropdown-item" href="#">BuySmallsmall</a>
+                        <a class="dropdown-item" href="#">RentSmallsmall</a>
+                        <a class="dropdown-item" href="#">Househmo</a>
+                        <a class="dropdown-item" href="#">Fair by Smallsmall</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="companyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Company
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="companyDropdown">
+                        <a class="dropdown-item" href="#">About Us</a>
+                        <a class="dropdown-item" href="#">Careers</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="mediaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Media
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="mediaDropdown">
+                        <a class="dropdown-item" href="#">Blog</a>
+                        <a class="dropdown-item" href="#">Podcast</a>
+                        <a class="dropdown-item" href="#">Newsletter</a>
+                        
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link login-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link get-started-button" href="#">Get Started</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Your main content here -->
+    </div>
+
+  
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="footer-social-icons">
+                <a href="#" class=""><img src="./Assets/images/Facebook.svg" width="" height="" alt="Facebook Logo"></a>
+                <a href="#" class=""><img src="./Assets/images/twitterX.svg" width="" height="" alt="twitterX Logo"></a>
+                <a href="#" class=""><img src="./Assets/images/instagram.svg" width="" height="" alt="instagram Logo"></a></a>
+                <a href="#" class=""><img src="./Assets/images/Youtube.svg" width="" height="" alt="Youtube Logo"></a></a>
+            </div>
+            <hr>
+            <div class="footer-content row">
+                <div class="col-md-3 footer-column">
+                    <h5>Products</h5>
+                    <ul>
+                        <li><a href="#">RentSmallsmall</a></li>
+                        <li><a href="#">BuySmallsmall</a></li>
+                        <li><a href="#">Househmo</a></li>
+                        <li><a href="#">Fair by Smallsmall</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li><a href="#">Podcast</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="#">Call us at  080 90 30 456 70</a></li>
+                        <li><a href="#">hello@smallsmall.com</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <a class="navbar-brand" href="#">
+                <img src="./Assets/images/smallsmallLogo.svg" width="100%" height="auto" alt="Logo">
+            </a>
+            <div class=" copyright">
+                <p>&copy; Copyright 2024 Smallsmall Technology Ltd <a href="#">Terms&Conditions</a> | <a href="#">Privacy Policy</a></p>
+            </div>
+
+           
+        </div>
+        
+
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function () {
+            this.classList.toggle('active');
+            var navbarCollapse = document.getElementById('navbarNavDropdown');
+            if (navbarCollapse.style.display === 'block') {
+                navbarCollapse.style.display = 'none';
+            } else {
+                navbarCollapse.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

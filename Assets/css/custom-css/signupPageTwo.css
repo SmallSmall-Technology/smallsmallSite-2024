@@ -87,7 +87,7 @@ input {
 
 .form-container {
     margin-top: 9%;
-    width: 50%;
+    width: 40%;
     border-radius: 15px;
     padding: 50px;
     background-color: #fff;
@@ -199,4 +199,8 @@ input {
         display: flex;
         justify-content: start;
     }
+}
+
+.terms-privacy-paragraph{
+    font-size:15px;
 }
