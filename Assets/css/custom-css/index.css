@@ -128,6 +128,12 @@ body {
                 width: 10%;
                 height: 10px;
             }
+
+            .quality-time-header{
+                font-size: 35px;
+                font-style: normal;
+                font-weight: 700;
+            }
         }
 
 
@@ -653,3 +659,48 @@ align-items: start;
     padding-right:8%;
     padding-bottom:5%;
 } */
+
+
+
+/* >>>>>>>>> for employees section <<<<<<<<<<<< */
+.for-employees-paragraphone{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 4.5%;
+}
+
+
+.house-hmo-heading-styling{
+    /* font-family: Hellix; */
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+
+.for-employees-paragraphTwo{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.for-employees-paragraphThree{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 4%;
+}
+
+
+.for-employees-button{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: #AC6ADD;
+    border-radius: 16px;
+    background: #FFF;
+    margin-top: 3%;
+}

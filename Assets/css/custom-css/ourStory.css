@@ -121,6 +121,23 @@ hr {
     .navbar-nav.ml-auto .nav-item .btn-custom {
         width: 100%;
     }
+
+    .connecting-people-header{
+        color: #222224;
+    
+    text-align: center;
+    /* font-family: Hellix; */
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    }
+
+    .footer {
+  
+        padding-left: 0;
+        padding-left: 0;
+    }
+    
 }
 
 
@@ -208,6 +225,15 @@ hr {
 
     .hamburger {
         display: inline-block;
+    }
+
+    .navbar{
+        justify-content: start;
+    }
+    .footer {
+  
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
