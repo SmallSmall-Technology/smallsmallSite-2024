@@ -572,13 +572,25 @@ hr{
     transform: rotate(45deg) translate(-5px, -6px);
 }
 @media (max-width: 768px) {
-    .navbar-collapse {
+    /* .navbar-collapse {
         display: none !important;
-    }
+    } */
     .hamburger {
         display: inline-block;
     }
 }
+
+
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        display: none;
+    }
+    .navbar-collapse.show {
+        display: block;
+    }
+}
+
 
 .copyright{
 /* margin-top:10%; */
@@ -704,3 +716,192 @@ align-items: start;
     background: #FFF;
     margin-top: 3%;
 }
+
+
+
+@media (max-width: 991px) {
+    /* Navigation */
+    .navbar-collapse {
+        position: fixed;
+        top: 56px; /* Adjust based on your navbar height */
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 1000;
+        overflow-y: auto;
+        transition: all 0.3s ease;
+        display: none;
+    }
+    .navbar-collapse.show {
+        display: block;
+    }
+    .navbar-nav {
+        margin-top: 20px;
+    }
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+    
+    /* Content adjustments */
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .quality-time-header {
+        font-size: 36px;
+    }
+    .our-innovative-paragraph {
+        font-size: 18px;
+    }
+    .get-started-button-One {
+        width: 100%;
+    }
+    .img-circle {
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+    
+    /* Sections */
+    .bidfarewell-section,
+    .for-employees-section,
+    .for-the-middle-class {
+        flex-direction: column;
+    }
+    .bidfarewell-section img,
+    .for-employees-section img,
+    .for-the-middle-class img {
+        width: 100%;
+        height: auto;
+    }
+    .bidfarewell-section-text,
+    .for-employees-img {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    /* Buttons */
+    .facts-about-us-button,
+    .for-employees-button,
+    .for-the-middle-class-button {
+        width: 100%;
+    }
+    
+ 
+
+@media (max-width: 576px) {
+    .quality-time-header {
+        font-size: 28px;
+    }
+    .our-innovative-paragraph {
+        font-size: 16px;
+    }
+    .for-renters-hfour {
+        font-size: 32px;
+    }
+    .for-employees-paragraphTwo {
+        font-size: 32px;
+    }
+}
+
+
+.for-earners-section {
+    position: relative;
+    margin-bottom: 3rem;
+  }
+  
+  .for-earners-image {
+    position: relative;
+  }
+  
+  .for-earners-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .for-earners-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    color: white; /* Adjust text color based on your image */
+  }
+  
+  .for-earners-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .for-earners-subheading {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .for-earners-grid {
+    margin-top: 2rem;
+  }
+  
+  .for-earners-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .for-earners-item h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .for-earners-item p {
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 991px) {
+    .for-earners-heading {
+      font-size: 2.5rem;
+    }
+  
+    .for-earners-subheading {
+      font-size: 1.25rem;
+    }
+  
+    .for-earners-item h3 {
+      font-size: 1.1rem;
+    }
+  
+    .for-earners-item p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .for-earners-heading {
+      font-size: 2rem;
+    }
+  
+    .for-earners-subheading {
+      font-size: 1.1rem;
+    }
+  
+    .for-earners-item h3 {
+      font-size: 1rem;
+    }
+  
+    .for-earners-item p {
+      font-size: 0.85rem;
+    }
+  
+    .for-earners-content {
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background for better readability on mobile */
+    }
+  }
